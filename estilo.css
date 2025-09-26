@@ -1,0 +1,128 @@
+html, body {
+    height: 100%; 
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: sans-serif; 
+    color: #333; 
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho-site {
+    height: 80px;
+    background-color: #4FC3F7;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    gap: 2rem;
+    
+}
+
+.titulo-cabecalho {
+    display: flex;
+    align-items: center;
+    font-size: 2rem;
+    color: #fff;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.logotipo {
+    width: 50px;
+    height: auto;
+    margin-right: 1rem;
+    overflow-x: hidden;
+}
+
+.conteudo-principal {
+    flex-grow: 1; 
+    background: linear-gradient(#A6DDEE, #6FA8DC, #4A86E8);
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+}
+
+.container-conteudo {
+    max-width: 1000px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    padding: 1rem; 
+    margin: 50px; 
+}
+
+.container-conteudo p {
+    color: #0D1C3D; 
+}
+
+.container-conteudo h1 {
+    text-align: center;
+}
+
+.container-conteudo h2 {
+    text-align: center;
+}
+
+.container-conteudo img {
+    
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block; 
+    margin: 20px auto 0; 
+    border: #0D1C3D dashed;
+    
+
+}
+
+
+.rodape-site {
+    height: 50px; 
+    background-color: #0D1C3D;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu {
+    display: flex;
+    gap: 3rem; 
+    
+}
+
+/* Estilização para os links do menu */
+.menu a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    background-color: transparent;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out; /* Transição para animação e cor de fundo */
+}
+
+/* Efeito ao passar o mouse */
+.menu a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo sutil ao passar o mouse */
+    transform: scale(1.1); /* Animação de esticamento (aumenta o tamanho) */
+}
+
+/* Efeito ao clicar (botão pressionado) */
+.menu a:active {
+    background-color: rgba(255, 255, 255, 0.4); /* Fundo mais escuro ao clicar */
+    transform: scale(1.05); /* Encolhe levemente para simular o clique */
+}
+
+iframe {
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+    display: block; 
+    margin: 20px auto 0; 
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <header class="cabecalho-site">
+        <h1 class="titulo-cabecalho">
+            <img class="logotipo" src="img/C_logo.png" alt="Logo da linguagem de programação C">
+            Linguagem C
+        </h1>
+        <div class="menu">
+            <a href="Principal.html">Pagína principal</a>
+            <a href="FuncaoPrincipal.html">Função Principal</a>
+            <a href="Criação.html">Criação</a>
+        </div>
+    </header>
+
+    <main class="conteudo-principal">
+        <div class="container-conteudo">
+            <h1>Para saber mais</h1>
+
+            <p>O sinal de porcentagem que apareceu no final da frase, indica que naquele lugar acabou a string, isto é,
+                acabou a frase que passamos para o <code>printf</code>. Como essa instrução não tinha uma quebra de
+                linha, o meu **terminal inseriu **ela. Mas isso não é um comportamento padrão do programa.</p>
+
+            <p>O comum é que a linha não seja quebrada. Para colocar esse comportamento de quebra de linha como padrão,
+                precisamos falar que no final da nossa frase, o <code>printf</code> imprima também uma linha nova
+                (<code>\n</code>):</p>
+
+            <img src="img/sobre/sobre1.bmp" alt="">
+            
+            <p>Quando compilamos e rodamos o arquivo, veremos que o sinal de porcentagem sumiu, pois a quebra de linha
+                está explícita agora.</p>
+
+                <img src="img/sobre/sobre2.bmp" alt=""><hr>
+
+                <h2>Compilação e Arquivo de Saída</h2>
+                <p>Nestes casos, o compilador está nomeando nosso arquivo de saída. Mas se nós quisermos, podemos passar um
+                    nome para o arquivo que será compilado. Basta falarmos para o compilador gerar a saída (<code>-o</code>)
+                    para o arquivo <code>ola-mundo.out</code>, por exemplo:</p>
+
+                    <img src="img/sobre/Sobre3.bmp" alt="">
+                
+                  <hr>  
+
+            <h2>Retorno da Função Main</h2>
+            <p>Uma coisa que precisamos nos atentar é que quando declaramos a função <code>main</code>, colocamos a
+                palavra <code>int</code> antes. Essa palavra indica o tipo de retorno de uma função. Ou seja, quando
+                digitamos o <code>int main()</code>, falamos que a nossa função retorna um número inteiro. Contudo onde
+                indicamos esse retorno?</p>
+
+            <p>Em alguns compiladores, quando nós compilássemos nosso código ele geraria um aviso (Warning) falando que
+                a função <code>main</code> não tem valor de retorno. Isso não impediria o programa de rodar, mas não é
+                considerada uma boa prática.</p>
+
+            <p>Ou seja, o legal é que a nossa função <code>main</code> retorne um número falando que sua execução
+                ocorreu sem nenhum problema. Por convenção, este número é o <code>0</code>. Logo, podemos falar para a
+                <code>main</code> retornar o número zero quando ela executar tudo que precisa:
+            </p>
+
+            <img src="img/sobre/Sobre4.bmp" alt="">
+
+<hr>
+
+            <h2>C na Alura</h2>
+            <p>O C é uma linguagem muito utilizada até hoje. Ela tem uma capacidade de processamento muito alta.</p>
+
+            <p> O Alura, possúi <a href="https://www.alura.com.br/cursos-online-programacao/linguagem-c">três cursos na linguagem</a>. Em cada um deles você criará jogos que
+                ajudarão a conhecer as funcionalidades da linguagem.</p>
+
+            <p>A Alura também tem tem um <a href="https://www.startalura.com.br/">curso sobre a linguagem C na Alura Start</a>. Nele você também conhecerá as
+                funcionalidades da linguagem. Além do curso de C, temos cursos que te mostrarão como utilizar os <a
+                    href="https://www.startalura.com.br/">recursos da linguagem em desafíos da Olimpíada Brasileira de Informática</a>. Nele você
+                verá como utilizar o C para criar algoritmos e se preparar para a olimpíada.</p>
+                <hr>
+                <p>Para saber sobre a criação do site clique aqui: <a href="Criação.html">Criação</a>. </p>
+        </div>
+    </main>
+
+    <footer class="rodape-site">
+        <p>Copyright © 2025</p>
+    </footer>
+</body>
+
+</html>
